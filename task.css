@@ -1,0 +1,111 @@
+body{
+	width: 100%;
+}
+/*@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lavender;
+  }
+}
+@media screen and (min-width: 800px) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1050px) {
+  body {
+    background-color: blue;
+  }
+}*/
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	justify-content: space-evenly;
+/*	padding: 10px;
+*/}
+@media screen and (min-width: 600px) {
+	.container{
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-end;
+		justify-content: space-evenly;
+/*	padding: 10px;
+*/}
+}
+@media screen and (min-width: 800px) {
+	.container{
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-end;
+		justify-content: space-evenly;
+		padding: 30px;
+
+}
+}
+@media screen and (min-width: 1000px) {
+	.container{
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-end;
+		justify-content: space-evenly;
+		padding: 40px;
+}
+}
+.imagebg{
+	position: relative;
+	height: 200px;
+	width: 200px;
+	margin: 15px 5px;
+
+}
+
+.tansitionLayer{
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	margin: 15px 5px;
+	background-color: #f6f7fb;
+	transform-origin: 100% 100%;
+	transition-property: height,width,transform,z-index;
+	transition-duration: .5s;
+}
+.tansitionLayer:hover {
+	transform: rotate(.5deg);
+	height: 190px;
+	width: 190px;
+
+}
+.contentLayer{
+	height: 200px;
+	width: 200px;
+	margin: 15px 5px;
+}
+
+img{
+	z-index:2;
+	position:absolute;
+	margin: 60px 50px;
+	display: block;
+	height: 80px;
+	width: 100px;
+}
+h5{
+	z-index: 2;
+	position: absolute;
+	margin: 10px 10px;
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Sofia',sans-serif;*/
+	color: #F598A4;
+
+}
+
